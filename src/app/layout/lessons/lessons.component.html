@@ -1,0 +1,56 @@
+<div>
+    <app-page-header [heading]="'My Lessons'" [icon]="'fa-bar-chart-o'"></app-page-header>
+    <div class="row">
+        <div class="col col-xl-12 col-lg-12">
+            <div class="card mb-3">
+                <div class="card-header">
+                    List of Lessons
+                </div>
+                <div class="card-body table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Last Updated</th>
+                            <th>Options</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Demo Lessons 1</td>
+                            <td>10-JAN-2017</td>
+                            <td>
+                                <a routerLink="/lessons/edit"><button type="button" class="btn btn-outline-primary btn-sm">Edit</button></a>
+                                <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Demo Lessons 2</td>
+                            <td>10-JAN-2017</td>
+                            <td>
+                                <a routerLink="/lessons/edit"><button type="button" class="btn btn-outline-primary btn-sm">Edit</button></a>
+                                <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Demo Lessons 3</td>
+                            <td>10-JAN-2017</td>
+                            <td>
+                                <a routerLink="/lessons/edit"><button type="button" class="btn btn-outline-primary btn-sm">Edit</button></a>
+                                <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <a routerLink="/lessons/add">
+                <button type="button" class="btn btn-primary btn-sm">Add New Lessons</button>
+            </a>
+        </div>
+    </div>
+</div>

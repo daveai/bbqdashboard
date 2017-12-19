@@ -1,0 +1,34 @@
+<div>
+    <app-page-header [heading]="'Add Course'" [icon]="'fa-edit'"></app-page-header>
+    <div class="row">
+        <div class="col-lg-6">
+            <form role="form">
+                <fieldset class="form-group">
+                    <label>Course Title</label>
+                    <input class="form-control">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label>Course Duration</label>
+                    <input class="form-control">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label>Course Descriptions</label>
+                    <app-simple-tiny
+                        [elementId]="'my-editor-id'"
+                        (onEditorKeyup)="keyupHandlerFunction($event)"
+                    >
+                    </app-simple-tiny>
+                </fieldset>
+                <div class="form-group">
+                    <label class="checkbox-inline">
+                        <input type="checkbox"> Is Published
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-lg-6">
+            <button type="submit" class="btn btn-primary">Add Lesson</button>
+        </div>
+    </div>
+</div>
